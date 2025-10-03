@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8346bf6e-c139-4cee-a029-9aebed964150" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/241.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Kenesis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/backpop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ca.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/caren.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/certifi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/clean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cleanaa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cleaners.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ken .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/kenn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/nurseses.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/staffss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carers.css" beforeDir="false" afterPath="$PROJECT_DIR$/carers.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carers.html" beforeDir="false" afterPath="$PROJECT_DIR$/carers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaning.css" beforeDir="false" afterPath="$PROJECT_DIR$/cleaning.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaning.html" beforeDir="false" afterPath="$PROJECT_DIR$/cleaning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nurse.css" beforeDir="false" afterPath="$PROJECT_DIR$/nurse.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/send-mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/send-mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffing.css" beforeDir="false" afterPath="$PROJECT_DIR$/staffing.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffing.html" beforeDir="false" afterPath="$PROJECT_DIR$/staffing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2rfwL72iUxE5PsI0Tn5kGXO2I2D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/sangeethaluke/Desktop/Kenesis",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8346bf6e-c139-4cee-a029-9aebed964150" name="Changes" comment="" />
+      <created>1736963379045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736963379045</updated>
+    </task>
+    <servers />
+  </component>
+</project>

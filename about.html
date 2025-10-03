@@ -6,173 +6,210 @@
   <title>About - Kenesis</title>
   <link rel="stylesheet" href="about.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="manifest" href="assets/site.webmanifest">
 </head>
 
 <body>
   <nav class="navbar fixed w-full bg-white shadow-sm z-50" id="navbar">
-    <div class="container-nav">
-      <div class="navbar-wrapper">
-        <div class="logo">
-          <img src="assets/k.png" alt="Logo" class="logo-image">
-        </div>
-
-        <div class="nav-links desktop-only">
-          <a href="index.html" class="nav-link">Home</a>
-          <div class="nav-item">
-            <a href="#services" class="nav-ser">Services&nbsp;<span class="dropdown-icon">▼</span></a>
-            <div class="dropdown-menu hidden">
-              <a href="carers.html" class="dropdown-link">Qualified Carers</a>
-              <a href="nurses.html" class="dropdown-link">Certified Nurses</a>
-              <a href="cleaning.html" class="dropdown-link">Cleaning Staff</a>
-              <a href="staffing.html" class="dropdown-link">Staffing Solutions</a>
-            </div>
+      <div class="container-nav">
+        <div class="navbar-wrapper">
+          <div class="logou">
+            <img src="assets/black logo.png" alt="Logo" class="logo-image" />
           </div>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="contact.html" class="btn">Contact Us</a>
+
+          <div class="nav-links desktop-only">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="nav-item">
+              <a href="#services" class="nav-ser"
+                >Staff Services&nbsp;<span class="dropdown-icon">▼</span></a
+              >
+              <div class="dropdown-menu hidden">
+                <a href="carers.html" class="dropdown-link">Carers & Nurses</a>
+                <a href="cleaning.html" class="dropdown-link">Cleaning Staff</a>
+                <a href="staffing.html" class="dropdown-link"
+                  >Staffing Solutions</a
+                >
+              </div>
+            </div>
+            <a href="catering.html" class="nav-link">Catering Services</a>
+            <a href="about.html" class="nav-link">About Kenesis</a>
+            <a href="contact.html" class="btn">Contact Us</a>
+          </div>
+
+          <button class="menu-button mobile-only" onclick="toggleMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="menu-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
         </div>
-
-        <button class="menu-button mobile-only" onclick="toggleMenu()">
-          <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
       </div>
-    </div>
 
-    <div class="mobile-menu hidden" id="mobile-menu">
-      <a href="index.html" class="mobile-nav-link">Home</a>
-      <a href="services.html" class="mobile-nav-link">Services</a>
-      <a href="about.html" class="mobile-nav-link">About</a>
-      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
-    </div>
-  </nav>
+      <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="about.html" class="mobile-nav-link">About Kenesis</a>
+        <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+      </div>
+    </nav>
 
+    <script>
+      // Get the navbar element
+      const navbar = document.getElementById("navbar");
 
-  <script>
-    // Get the navbar element
-    const navbar = document.getElementById('navbar');
+      // Listen for the scroll event
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          // Change 50 to the scroll position where you want the color change
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
 
-    // Listen for the scroll event
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > 50) { // Change 50 to the scroll position where you want the color change
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
       }
-    });
-
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-  </script>
+    </script>
 
 </div>
-<section id="about" class="about-section">
-  <div class="acontainer">
-    <div class="content-grid">
-      <div>
-        <h2 class="heading">
-          Your trusted source for exceptional healthcare talent.
-        </h2>
-        <p class="text">
-          
-Kenesis thorough screening process assures top-tier professionals who are committed to delivering the highest standards of patient care.
-We match skilled healthcare professionals with compassionate facilities, prioritising patient well-being and fostering a culture of care.
-        </p>
-        <!--<p class="text">
-          Our rigorous vetting process and commitment to excellence have made us a trusted partner for healthcare
-          facilities across the nation. We take pride in maintaining the highest standards of professional integrity
-          and patient care.
-        </p>-->
-        <div class="profile">
-          <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=200&h=200"
-            alt="Medical Team" class="profile-img" />
-          <div>
-            <p class="profile-name">Name</p>
-            <p class="profile-role">Role</p>
-          </div>
-        </div>
-      </div>
 
 
 
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-icon">
-            <img src="assets/user.png" alt="Users Icon" />
-          </div>
-          <div class="stat-value">500+</div>
-          <div class="stat-label">Healthcare Professionals</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon">
-            <img src="assets/building-2.png" alt="Building Icon" />
-          </div>
-          <div class="stat-value">100+</div>
-          <div class="stat-label">Partner Facilities</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon">
-            <img src="assets/star-2.png" alt="Star Icon" />
-          </div>
-          <div class="stat-value">98%</div>
-          <div class="stat-label">Satisfaction Rate</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon">
-            <img src="assets/security.png" alt="Shield Icon" />
-          </div>
-          <div class="stat-value">15+</div>
-          <div class="stat-label">Years Experience</div>
-        </div>
-      </div>
-    </div>
+<!--here-->
+<div class="image-container">
+  <img src="assets/ab.png" alt="Landscape Picture">
+</div>
+<div class="about-container">
+  <div class="about-header">
+      <p>Kenesis a leading staff agency in the hospitality sector, providing a range of staffing services 
+          through innovative solutions offering flexible agreements/opportunities to staff and the client.
+      </p>
   </div>
-</section>
+  
+  <div class="vision-mission">
+    <div class="vision">
+        <h2 class="sparkle-heading">Kenesis Vision</h2>
+        <p>
+            To be the catalyst for a more inclusive and innovative hospitality industry, 
+            connecting exceptional talent with thriving businesses.
+        </p>
+    </div>
+    <div class="mission">
+        <h2 class="sparkle-heading">Kenesis Mission</h2>
+        <p>
+            To empower our clients to build diverse and inclusive teams that deliver 
+            unforgettable guest experiences through innovative workforce solutions.
+        </p>
+    </div>
+</div>
+  <div class="flexible-solutions">
+    <h2 class="heading">
+      Flexible Solutions
+      <img src="assets/43.png" alt="Icon" class="icon">
+    </h2>
+      <p>
+          Your career, your way. Explore exciting job opportunities across the UK. 
+          We offer competitive pay, flexible schedules, and access to sought-after employers. 
+          Our free Employee Assistance Programme supports your overall well-being.
+      </p>
+  </div>
+
+  <div class="responsive">
+      <h2><img src="assets/44.png" alt="rIcon" class="ricon">Responsive, We Are There When You Need Us</h2>
+      <p>
+          Your recruitment needs, met quickly and efficiently. We provide tailored solutions for all your hiring needs, 
+          from single placements to large-scale staffing projects. Our responsive teams and extensive network ensure 
+          rapid delivery, 100% compliance, and significant cost savings for your business.
+      </p>
+  </div>
+
+  <div class="partners">
+      <h2>Our Partners</h2>
+      <div class="partner-logos">
+          <img class="logo1" src="assets/wel.jpg" alt="Partner Logo 1">
+          <img class="logo2" src="assets/ch.png" alt="Partner Logo 2">
+      </div>
+  </div>
+</div>
 
 </body>
 
 <footer>
-  <div class="wave-fcontainer bottom-wave">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L80,170.7C160,149,320,107,480,117.3C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> 
-    </div>  
-  <div class="fcontainer">
-    <div class="footer-content">
-      <!-- Quick Links Section -->
-      <div class="footer-section">
-        <h2>Quick Links</h2>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="wave-fcontainer bottom-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,192L80,170.7C160,149,320,107,480,117.3C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+          ></path>
+        </svg>
       </div>
-      <!-- Phone Info Section -->
-      <div class="footer-section-ph">
-        <h1>Contact Us</h1>
-        <p>Email: <a href="mailto:info@kenesis.co.uk">info@kenesis.co.uk</a></p>
-        <p>Phone: <a href="tel:+44 2039 8373760">+44 2039 837376</a></p>
-      </div>
-      <!-- Logo and Contact Info Section -->
-      <div class="footer-section logoj">
-        <a href="https://jaesit.com">
+      <div class="fcontainer">
+        <div class="footer-content">
+          <!-- Quick Links Section -->
+          <div class="footer-section">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Kenesis</a></li>
+              <li><a href="services.html">Staff Services</a></li>
+              <li><a href="catering.html">Catering Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Phone Info Section -->
+          <div class="footer-section-ph">
+            <h2>Contact Us</h2>
+            <p>
+              Email: <a href="mailto:info@kenesis.co.uk">info@kenesis.co.uk</a>
+            </p>
+            <p>Phone: <a href="tel:+44 2039837445">+44 2039 837445</a></p>
+          </div>
+          <!-- Logo and Contact Info Section -->
+          <div class="footer-section logoj">
+            <!--<a href="https://jaessolutions.com">
           <img src="assets/logo1.svg" alt="JAES Solutions Logo" />
-        </a>
-        <p>Designed by <a href="https://jaesit.com">JAES Solutions</a>, Harlow, UK</p>
-        <p>Email: <a href="mailto:info@jaesit.com">info@jaesit.com</a></p>
-        <p>Phone: <a href="tel:+441279897648">+44 1279 897648</a></p>
+        </a>-->
+            <div class="serv">
+              <h2>Our Services</h2>
+              <ul>
+                <li><a href="carers.html">Carers & Nurses</a></li>
+                <li><a href="cleaning.html">Cleaning Staff</a></li>
+                <li><a href="staffing.html">Staffing Solutions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">
+          <p>
+            Kenesis is a trading name of Kalla Holdings Ltd, registered on
+            company house under reference number <b>14699518</b>
+          </p>
+          <br />
+          <p>
+            Designed by <a href="http://jaessolutions.com">JAES Solutions</a>,
+            UK | Email:
+            <a href="mailto:info@jaesSolutions.com">info@jaessolutions.com</a>
+          </p>
+          <p>&copy; 2025 Kenesis. All Rights Reserved.</p>
+        </div>
       </div>
-    </div>
-    <!-- Copyright -->
-    <div class="copyright">
-      <p>&copy; 2024 Kenesis. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
+    </footer>
 
 </html>

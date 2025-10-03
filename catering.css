@@ -1,0 +1,456 @@
+@media (max-width: 768px) {
+  .body{
+    margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  }
+}
+
+  body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .navbar.scrolled {
+  background-color: #ffffff;
+  opacity: 0.9; /* Change to the color you want */
+  color: #fff; /* Text color if needed */
+  }
+  /*navbar*/
+  
+  .bgcolor{
+      background-image: url(assets/caren.png) ; 
+    /*background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    background-size: cover;
+  }   
+ 
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+  }
+  
+  .container-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  
+   .logo-image {
+    height: 80px;
+    margin-left: 60px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-ser{
+    gap: 1rem;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .nav-ser:hover .dropdown-icon {
+    transform: rotate(180deg);
+  }
+  .dropdown-icon {
+    font-size: 0.8rem; /* Adjust icon size */
+    transition: transform 0.3s;
+  }
+  .nav-ser:hover {
+    color: #ff8c42;
+  }
+  
+  /* Rotate icon when hovered */
+  
+  /* Dropdown styles */
+  .nav-item {
+  position: relative;
+  }
+  
+  .dropdown-menu {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 100%; /* Below the "Services" link */
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+  list-style: none;
+  display: none;
+  margin-left: -20px;
+  /*z-index: 100;*/
+  }
+  
+  .dropdown-link {
+  
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  padding-left: 10px;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;    /* Hide overflowing text */
+  text-overflow: ellipsis; 
+  transition: background-color 0.3s ease-in-out;
+  text-align: left;
+  }
+  
+  .dropdown-link:hover {
+  color: #ff8c42;;
+  }
+  
+  /* Show dropdown on hover */
+  .nav-item:hover .dropdown-menu {
+  display: block;
+  }
+  
+  .nav-link {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #ff8c42;
+  }
+  
+  .btn {
+    background-color: #ff880d;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+  
+  .btn:hover {
+    background-color: #c86a0c;
+  }
+  
+  /* Mobile menu styles */
+  .mobile-only {
+    display: none;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+    color: #333333;
+    transition: color 0.3s;
+  }
+  
+  .menu-icon:hover {
+    color: #ff8c42;
+  }
+  
+  .mobile-menu {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .mobile-nav-link {
+    display: block;
+    color: #333333;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+  }
+  
+  .mobile-nav-link:hover {
+    color: #ff8c42;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .desktop-only {
+      display: none;
+    }
+  
+    .mobile-only {
+      display: block;
+    }
+  }
+  
+
+
+.enquiry-bt {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+  z-index: 1;
+    /* Adjust as needed */
+  align-items: center;
+  
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  width: 15rem;
+  border-radius: 50px;
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.75s;
+  
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.enquiry-bt::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 50px;  /* Match button border radius */
+  clip-path: ellipse(0% 0% at 50% 50%);
+  transition: clip-path 0.75s ease;
+  z-index: -1;
+}
+
+.enquiry-bt:hover::after {
+  clip-path: ellipse(100% 100% at 50% 50%);
+}
+
+
+.enquiry-bt:hover {
+  color:black;
+  box-shadow: 0 0 10px white,
+  0 0 50px white;
+}
+
+
+
+   @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .animate-scroll {
+        animation: scroll 30s linear infinite;
+      }
+      #plate-model {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        transition: transform 0.3s ease-out;
+        z-index: 10;
+      }
+      /* Custom colors for all headings */
+      
+      /* Custom colors for buttons, links, and accents */
+     
+      
+      /* Hero section adjustments */
+      section.bg-white.min-h-screen h1 {
+        color: #ff8c42;
+      }
+      section.bg-white.min-h-screen p {
+        color: #4a4a4a;
+      }
+      /* Why Choose Us gradient boxes */
+      .bg-gradient-to-br.from-green-50.to-green-100 {
+        background: linear-gradient(135deg, #ff8c42 0%, #ffffff 100%);
+      }
+      .bg-gradient-to-br.from-purple-50.to-purple-100 {
+        background: linear-gradient(135deg, #ff8c42 0%, #ffffff 100%);
+      }
+      .bg-gradient-to-br.from-pink-50.to-pink-100 {
+        background: linear-gradient(135deg, #ff8c42 0%, #ffffff 100%);
+      }
+     
+
+      /* Footer */
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+  
+    .footer-content {
+      padding-top: 50px;
+      align-items: center;
+    }
+    .footer-section {
+      min-width: 100%;
+      text-align: center;
+    }
+    .footer-section-ph {
+      text-align: center;
+    }
+    .logoj img {
+      margin: 0 auto;
+    }
+    .wave-fcontainer{
+      display: none;
+    }
+  }
+/* Footer Styles */
+  /* General Footer Styling (unchanged) */
+  footer {
+    height: auto; /* Adjust height to fit content dynamically */
+    background-color: #ff880d; /* Vibrant background */
+    color: #111111;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .wave-fcontainer{
+    margin-top: -120px;
+    
+  }
+  .fcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 15px;
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    color: #111111;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styling for the Phone Info Section */
+  .footer-section-ph {
+     /* Subtle background for contrast */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .footer-section-ph h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+    text-align: center;
+     /* Highlighted heading color */
+  }
+  
+  .footer-section-ph p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 8px 0;
+  }
+  
+  .footer-section-ph a {
+    color: #852c02;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .footer-section-ph a:hover {
+    text-decoration: underline;
+  }
+  
+  /* serv Contact Info Section */
+  
+  .serv {
+    margin-top: 35px;
+    
+  }
+  
+  
+  .serv a {
+    color: #111111;
+    text-decoration: none;
+  }
+  
+  .serv a:hover {
+    text-decoration: underline;
+  }
+  .copyright{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: -20px;
+    margin-top: 40px;
+  }
+  .copyright a{
+    color: #111111;
+    text-decoration: none;
+  }
+  .copyright a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  

@@ -11,13 +11,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // Email settings
-    $to = "sangeethaluke@gmail.com"; // Replace with your email
+    // Email settings can be customized accordingly 
+    $to = "info@kenesis.co.uk"; 
     $subject = "New Contact Form Submission to Kenesis";
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
     $headers = "From: $email";
 
-    // Send the email
+    // Sending
     if (mail($to, $subject, $body, $headers)) {
         echo "Thank you for your message. We will get back to you soon.";
     } else {

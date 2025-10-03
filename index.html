@@ -13,122 +13,105 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "pda0zh1a7d");
 </script>
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="manifest" href="assets/site.webmanifest">
 </head>
 
 <body>
-  <nav class="navbar fixed w-full bg-white shadow-sm z-50" id="navbar">
-    <div class="container-nav">
-      <div class="navbar-wrapper">
-        <div class="logo">
-          <img src="assets/k.png" alt="Logo" class="logo-image">
-        </div>
-
-        <div class="nav-links desktop-only">
-          <a href="index.html" class="nav-link">Home</a>
-          <div class="nav-item">
-            <a href="#services" class="nav-ser">Services&nbsp;<span class="dropdown-icon">▼</span></a>
-            <div class="dropdown-menu hidden">
-              <a href="carers.html" class="dropdown-link">Qualified Carers</a>
-              <a href="carers.html" class="dropdown-link">Certified Nurses</a>
-              <a href="cleaning.html" class="dropdown-link">Cleaning Staff</a>
-              <a href="staffing.html" class="dropdown-link">Staffing Solutions</a>
-            </div>
+   <nav class="navbar fixed w-full bg-white shadow-sm z-50" id="navbar">
+      <div class="container-nav">
+        <div class="navbar-wrapper">
+          <div class="logou">
+            <img src="assets/black logo.png" alt="Logo" class="logo-image" />
           </div>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="contact.html" class="btn">Contact Us</a>
+
+          <div class="nav-links desktop-only">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="nav-item">
+              <a href="#services" class="nav-ser"
+                >Staff Services&nbsp;<span class="dropdown-icon">▼</span></a
+              >
+              <div class="dropdown-menu hidden">
+                <a href="carers.html" class="dropdown-link">Carers & Nurses</a>
+                <a href="cleaning.html" class="dropdown-link">Cleaning Staff</a>
+                <a href="staffing.html" class="dropdown-link"
+                  >Staffing Solutions</a
+                >
+              </div>
+            </div>
+            <a href="catering.html" class="nav-link">Catering Services</a>
+            <a href="about.html" class="nav-link">About Kenesis</a>
+            <a href="contact.html" class="btn">Contact Us</a>
+          </div>
+
+          <button class="menu-button mobile-only" onclick="toggleMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="menu-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
         </div>
-
-        <button class="menu-button mobile-only" onclick="toggleMenu()">
-          <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
       </div>
-    </div>
 
-    <div class="mobile-menu hidden" id="mobile-menu">
-      <a href="index.html" class="mobile-nav-link">Home</a>
-      <a href="services.html" class="mobile-nav-link">Services</a>
-      <a href="about.html" class="mobile-nav-link">About</a>
-      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
-    </div>
-  </nav>
+      <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="about.html" class="mobile-nav-link">About Kenesis</a>
+        <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+      </div>
+    </nav>
 
+    <script>
+      // Get the navbar element
+      const navbar = document.getElementById("navbar");
 
-  <script>
-    // Get the navbar element
-    const navbar = document.getElementById('navbar');
+      // Listen for the scroll event
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          // Change 50 to the scroll position where you want the color change
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
 
-    // Listen for the scroll event
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > 50) { // Change 50 to the scroll position where you want the color change
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
       }
-    });
-
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-  </script>
-  <!-- Navigation Bar 
-    <nav>
-        <div class="logo">
-            <img src="assets/whiteb.png" alt="Care Home Agency Logo">
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>-->
-  <div class="bgcolor" id="backgroundDiv">
-
-    <!-- main section 
-    <div id="home" class="relative bg-gradient-primary min-h-screen">
-      <div class="absolute inset-0 bg-image-overlay"></div>
-      
-      <div class="relative container pt-32 pb-12">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 class="title-m">
-            Dedicated Agency Available 24/7.
-            </h1>
-            <p class="description">
-              Connecting healthcare facilities with qualified, experienced medical professionals. Available 24/7 for your staffing needs.
-            </p>
-            <div class="button-group">
-              <a href="#contact" class="btn-primary">
-                Get Started
-                <span class="arrow">&#8594;</span>
-              </a>
-              <a href="#services" class="btn-secondary">
-                Learn More
-              </a>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>-->
+    </script>
+    
+    <div class="imag-container">
+      <img class="imag" src="assets/kkk.png" alt="Image" id="image">
+      <a href="contact.html" style="--clr: #ff880d;" class="enquiry-bt"  >Contact us now</a>
+  </div>
+   
     <!-- Hero Section -->
 
   </div>
   <section id="about" class="about-section">
     <div class="acontainer">
       <div class="content-grid">
-        <div>
-          <h2 class="heading">
-            Your trusted source for exceptional healthcare talent.
+        <div >
+          <h2 class="heading"data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+            Your trusted source for exceptional talent.
           </h2>
-          <p class="text">
+          <p class="text" data-aos="fade-right" data-aos-anchor-placement="top-center">
             
 Kenesis thorough screening process assures top-tier professionals who are committed to delivering the highest standards of patient care.
 We match skilled healthcare professionals with compassionate facilities, prioritising patient well-being and fostering a culture of care.
@@ -151,32 +134,32 @@ We match skilled healthcare professionals with compassionate facilities, priorit
 
 
         <div class="stats-grid">
-          <div class="stat-card">
+          <div class="stat-card" data-aos="zoom-in" >
             <div class="stat-icon">
               <img src="assets/user.png" alt="Users Icon" />
             </div>
             <div class="stat-value">500+</div>
             <div class="stat-label">Healthcare Professionals</div>
           </div>
-          <div class="stat-card">
+          <div class="stat-card" data-aos="zoom-in" >
             <div class="stat-icon">
               <img src="assets/building-2.png" alt="Building Icon" />
             </div>
             <div class="stat-value">100+</div>
             <div class="stat-label">Partner Facilities</div>
           </div>
-          <div class="stat-card">
+          <div class="stat-card" data-aos="zoom-in" >
             <div class="stat-icon">
               <img src="assets/star-2.png" alt="Star Icon" />
             </div>
             <div class="stat-value">98%</div>
             <div class="stat-label">Satisfaction Rate</div>
           </div>
-          <div class="stat-card">
+          <div class="stat-card" data-aos="zoom-in" >
             <div class="stat-icon">
               <img src="assets/security.png" alt="Shield Icon" />
             </div>
-            <div class="stat-value">15+</div>
+            <div class="stat-value">5+</div>
             <div class="stat-label">Years Experience</div>
           </div>
         </div>
@@ -185,58 +168,7 @@ We match skilled healthcare professionals with compassionate facilities, priorit
   </section>
   
 
-  <!-- Introduction Section 
-    <section id="introduction">
-        <h2>About Our Agency</h2>
-        <div class="content-wrapper">
-            <div class="text-content">
-                <p>At Kenesis, we are committed to providing exceptional support to care homes by delivering reliable, certified care professionals whenever you need them. With our 24/7 service, we ensure that your staffing needs are met seamlessly, day or night. Whether it's licensed nurses, skilled carers, or qualified cleaning staff, our team is always ready to step in and provide the care and support your residents deserve.</p>
-                <button>See Recruitment Details</button>
-            </div>
-            <div class="image-content">
-                <img src="assets/241.png" alt="Care Home Agency Image">
-            </div>
-        </div>
-    </section>-->
-
-  <!-- Key Services Summary (3 ns) -->
-  <!-- Key Services Summary (3 Columns) 
-   <h1 class="ser">Services</h1>
-<section id="services">
-
-    <a href="nurses.html" class="service-link">
-        <div class="service-item">
-            <h3>Certified Nurses</h3>
-            <p>Experienced, licensed nurses for medical needs.</p>
-            <img src="assets/nurse.png" alt="Nurse Icon" class="service-icon">
-        </div>
-    </a>
-    
-    <a href="cleaning.html" class="service-link">
-        <div class="service-item">
-            <h3>Cleaning Staff</h3>
-            <p>Qualified cleaning staff, based upon your needs</p>
-            <img src="assets/clean.png" alt="Cleaning Icon" class="service-icon">
-        </div>
-    </a>
-    
-    <a href="carers.html" class="service-link">
-        <div class="service-item">
-            <h3>Qualified Carers</h3>
-            <p>Skilled carers for personal care and daily tasks.</p>
-            <img src="assets/carer.png" alt="Carer Icon" class="service-icon">
-        </div>
-    </a>
-    
-    <a href="staffing.html" class="service-link">
-        <div class="service-item">
-            <h3>Flexible Staffing Solutions</h3>
-            <p>Customized staffing for your needs.</p>
-            <img src="assets/staff.png" alt="Staffing Icon" class="service-icon">
-        </div>
-    </a>
-
-</section>-->
+ 
   <section id="services" class="services-section">
     <div class="container">
       <h2 class="section-title">Services</h2>
@@ -262,7 +194,7 @@ We match skilled healthcare professionals with compassionate facilities, priorit
           </div>
         </a>
         <!-- Service 1 -->
-        <a href="nurses.html" class="service-link">
+        <a href="carers.html" class="service-link">
           <div class="service-card">
             <div class="service-icon">
               <img src="assets/stethoscope.png" alt="Stethoscope Icon" />
@@ -302,7 +234,7 @@ We match skilled healthcare professionals with compassionate facilities, priorit
             </div>
             <h3 class="service-title">Staffing Solutions</h3>
             <p class="service-description">
-              Customized staffing for your needs.
+              Customised staffing for your needs.
             </p>
             <div class="service-image">
               <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80"
@@ -350,7 +282,7 @@ We match skilled healthcare professionals with compassionate facilities, priorit
       </div>    
        <div class="contact-grid">
         <!-- Contact Info -->
-        <div class="contact-info">
+        <div class="contact-info" data-aos="fade-right" >
           <h2 class="contact-title">Get in Touch</h2>
           <p class="contact-description">
             Reimagine your healthcare team. Kenesis got you covered.
@@ -360,7 +292,7 @@ We match skilled healthcare professionals with compassionate facilities, priorit
               <img src="assets/telephone.png" alt="Phone Icon" class="contact-icon" />
               <div>
                 <h3 class="contact-label">Phone</h3>
-                <p class="contact-text"><a href="tel:+44 2039 8373760">+44 2039 837376</a></p>
+                <p class="contact-text"><a href="tel:+44 2039837445">+44 2039 837445</a></p>
               </div>
             </div>
             <div class="contact-item">
@@ -374,18 +306,14 @@ We match skilled healthcare professionals with compassionate facilities, priorit
               <img src="assets/placeholder.png" alt="Map Pin Icon" class="contact-icon" />
               <div>
                 <h3 class="contact-label">Address</h3>
-                <p class="contact-text">86-90 Paul Street,
-                  London,
-                  England,
-                  EC2A 4NE,
-                  United Kingdom</p>
+                <p class="contact-text">1A Local Board Road, Watford, WD17 2JP</p>
               </div>
             </div>
           </div>
         </div>
   
         <!-- Contact Form -->
-        <form action="send-mail.php" method="POST" class="contact-form" id="contact-form">
+        <form action="send-mail.php" method="POST" class="contact-form" id="contact-form" data-aos="fade-left" >
           <div class="form-group">
             <label class="forml" for="name">Name</label>
             <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required />
@@ -420,62 +348,7 @@ We match skilled healthcare professionals with compassionate facilities, priorit
       </div>
     </div>
   </section>
-          <!--<script onsubmit="sendEmail(); reset(); return false;"  src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-          function sendEmail(){
-            Email.send({
-            Host : "smtp.gmail.com",
-            Username : "sangeethaluke@gmail.com",
-            Password : "Slm250803",
-            To : 'sangeethaluke7@gmail.com',
-            From : document.getElementById('email').value,
-            Subject : "New Contact Form Enquiry.",
-            Body : "And this is the body"
-            }).then(
-            message => alert(message)
-            );
-          }
-        </script>-->
-          <!--<script>document.getElementById("contact-form").addEventListener("submit", async function (event) {
-    event.preventDefault();
-  
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-  
-    if (!name || !email || !message) {
-      alert("Please fill in all fields.");
-      return;
-    }
-  
-    try {
-      const response = await fetch("http://localhost:5000/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, message }),
-      });
-  
-      const result = await response.json();
-      if (response.ok) {
-        alert(result.message);
-        document.getElementById("contact-form").reset();
-      } else {
-        alert("Failed to send email. Please try again.");
-      }
-    } catch (error) {
-      console.error(error);
-      alert("An error occurred. Please try again later.");
-    }
-  });</script>-->
-          <!-- Call to Action Buttons 
-    <section id="cta-buttons">
-        <a href="contact.html" class="button">Request Staff</a>
-        <a href="about.html" class="button">Learn More About Us</a>
-        <a href="contact.html" class="button">Contact Us</a>
-    </section>-->
-  
+        
     
     <div> <br> </div>
     <script>
@@ -498,45 +371,103 @@ We match skilled healthcare professionals with compassionate facilities, priorit
       });
 
     </script>
-    
+    <script>
+      function spark(event){
+          let i = document.createElement('i');
+          i.style.left = (event.pageX) + 'px';
+          i.style.top = (event.pageY) + 'px';
+          // to add random shape
+          i.style.scale = `${Math.random() * 2 + 1}`;
+
+          // randomly set some property. --x and --y is the name of variable
+          // The i.style.setProperty function is used to set CSS custom properties (variables) directly on an element's style object.
+          i.style.setProperty('--x', getRandomTransitionValue());
+          i.style.setProperty('--y', getRandomTransitionValue());
+
+          document.body.appendChild(i);
+
+          setTimeout(() => {
+              document.body.removeChild(i);
+          }, 2000);
+      }
+
+      function getRandomTransitionValue(){
+          return `${Math.random() * 400 - 200}px`;
+      }
+
+      document.addEventListener('mousemove', spark);
+  </script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000 // Duration in milliseconds
+  });
+</script>
 </body>
+
+
 <footer>
-  <div class="wave-fcontainer bottom-wave">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFD4A6" fill-opacity="1" d="M0,192L80,170.7C160,149,320,107,480,117.3C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> 
-    </div>  
-  <div class="fcontainer">
-    <div class="footer-content">
-      <!-- Quick Links Section -->
-      <div class="footer-section">
-        <h2>Quick Links</h2>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="wave-fcontainer bottom-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,192L80,170.7C160,149,320,107,480,117.3C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+          ></path>
+        </svg>
       </div>
-      <!-- Phone Info Section -->
-      <div class="footer-section-ph">
-        <h1>Contact Us</h1>
-        <p>Email: <a href="mailto:info@kenesis.co.uk">info@kenesis.co.uk</a></p>
-        <p>Phone: <a href="tel:+44 2039 8373760">+44 2039 837376</a></p>
-      </div>
-      <!-- Logo and Contact Info Section -->
-      <div class="footer-section logoj">
-        <a href="https://jaesit.com">
+      <div class="fcontainer">
+        <div class="footer-content">
+          <!-- Quick Links Section -->
+          <div class="footer-section">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Kenesis</a></li>
+              <li><a href="services.html">Staff Services</a></li>
+              <li><a href="catering.html">Catering Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Phone Info Section -->
+          <div class="footer-section-ph">
+            <h2>Contact Us</h2>
+            <p>
+              Email: <a href="mailto:info@kenesis.co.uk">info@kenesis.co.uk</a>
+            </p>
+            <p>Phone: <a href="tel:+44 2039837445">+44 2039 837445</a></p>
+          </div>
+          <!-- Logo and Contact Info Section -->
+          <div class="footer-section logoj">
+            <!--<a href="https://jaessolutions.com">
           <img src="assets/logo1.svg" alt="JAES Solutions Logo" />
-        </a>
-        <p>Designed by <a href="https://jaesit.com">JAES Solutions</a>, Harlow, UK</p>
-        <p>Email: <a href="mailto:info@jaesit.com">info@jaesit.com</a></p>
-        <p>Phone: <a href="tel:+441279897648">+44 1279 897648</a></p>
+        </a>-->
+            <div class="serv">
+              <h2>Our Services</h2>
+              <ul>
+                <li><a href="carers.html">Carers & Nurses</a></li>
+                <li><a href="cleaning.html">Cleaning Staff</a></li>
+                <li><a href="staffing.html">Staffing Solutions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">
+          <p>
+            Kenesis is a trading name of Kalla Holdings Ltd, registered on
+            company house under reference number <b>14699518</b>
+          </p>
+          <br />
+          <p>
+            Designed by <a href="http://jaessolutions.com">JAES Solutions</a>,
+            UK | Email:
+            <a href="mailto:info@jaesSolutions.com">info@jaessolutions.com</a>
+          </p>
+          <p>&copy; 2025 Kenesis. All Rights Reserved.</p>
+        </div>
       </div>
-    </div>
-    <!-- Copyright -->
-    <div class="copyright">
-      <p>&copy; 2024 Kenesis. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
+    </footer>
 
 </html>
