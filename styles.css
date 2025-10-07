@@ -37,6 +37,7 @@ i{
     margin: 0;
     padding: 0;
     text-align: center;
+    overflow-x: hidden;
   }
   
   .navbar.scrolled {
@@ -313,13 +314,14 @@ i{
 @media (max-width: 767px) {
   .imag {
     content: url('assets/phone.png'); 
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
-    width: 100vw;  /* Covers full viewport width */
+    width: 100vh;  /* Covers full viewport width */
     height: 100vh; /* Covers full viewport height */
     object-fit: cover; /* Ensures it fills the screen properly */
     z-index: -1; /* Sends it behind other content */
+    overflow: hidden;
   }
 }
 
@@ -328,7 +330,7 @@ i{
 @media (min-width: 768px) {
   .imag {
     object-fit: cover;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 50px; /* Adjust as needed */
   }
 }
 
@@ -337,6 +339,7 @@ i{
   height: 100%;
   object-fit: cover;
   transition: filter 0.3s ease;
+
 }
 
 /* Hide CTA button on mobile */
@@ -349,6 +352,7 @@ i{
 .imag-container {
   position: relative;
   display: inline-block;
+margin-top: 15px;
 }
 
 .enquiry-bt {
